@@ -1,0 +1,270 @@
+@import 'colors';
+@import 'images';
+@import 'fonts_measures';
+@import 'mixins';
+
+body{
+    background: $bodybg;
+    margin:0;
+        p{
+        font-family: $poppins;
+        font-size: 16px;
+        color:$txt;
+        text-align: center;
+        }   
+}
+#topbg{
+    background: url($topbg_img) , url($topbg_img2);
+    background-repeat: no-repeat;
+    background-position:-250px -1029px;
+    background-size: auto;
+        p{
+        color:$white;
+        } 
+}
+
+@import 'topbar';
+
+.btn{
+    @include linkBtn();
+   }
+
+#showcase{
+    width:$pagewidth;
+    margin: auto;
+    color: $white;
+    
+        .col {
+            .outlinebtn{
+            background-color: $transparent;
+            color:$white;
+            border-radius: 8px;
+            width: 200px;
+            height:80px;
+            padding-top:20px;
+            border: 1px solid $white;
+             }
+            .mobs{
+            position: relative;
+            text-align: right;
+            }
+              
+             .mob1 {
+            position: relative;
+            top: 60px;
+            left:-200px;
+              }
+               .mob2 {
+            position: absolute;
+            top: -40px;
+            left: 265px;
+                }
+             
+        }
+}
+
+@keyframes spin { 100% { transform: rotate(360deg); }}
+#about-us {
+@include page();
+        .col {
+            .bg2{
+            margin-top: -600px;
+            margin-left: 120px;
+            z-index: 1;
+            animation: spin 6s linear infinite;
+            }
+            
+        }
+        .col{
+            .heading{
+                @include miniHeader(); 
+             }
+             p{
+                color:$txt;
+                font-family: $roboto;
+             }
+       }
+    
+}
+#features {
+    h1{
+        font-size: 40px;
+      }
+      h2{
+        font-size: 20px;
+      }
+     p{
+         color:$txt;
+         font-family: $roboto;
+    }
+    .pmini{
+        font-size: 14px;
+        color:$txt;
+        font-family: $roboto;
+      }
+      
+    @include page();
+        .col{
+            .heading{
+            @include miniHeader(); 
+            }
+        }
+        .col{
+            .layer1{
+                position: relative;
+                background: $transparent;
+                margin-top: -550px;
+                left: 250px;
+            }
+            .layer2{
+                position: relative;
+                background: $transparent;
+                margin-top: -500px;
+                left: 0px;
+            }
+            .layer3{
+                position: relative;
+                display: inline-block;
+                right: -100px;
+                animation: spin 6s linear infinite;
+            }
+        }
+}
+
+#screens {
+    @include page();
+    h1{
+    font-size: 40px;
+    text-align: center;
+    }
+    h2{
+    font-size: 40px;
+    font-family: 'URW DIN Arabic', sans-serif; 
+    font-weight: bold;
+    color:$blue;
+    }
+    p{
+        color:$txt;
+        font-family: $roboto;
+    }   
+    .img{
+        width:90%;
+      }
+    .img_c{
+        width:100%;
+      }
+    #info{
+    display: inline-block;
+    width:80%;
+    text-align: center;
+        .header{
+        display: inline-block;
+        width:550px;
+        }
+    }
+}
+.bluebg{
+    height:550px;
+    background: url($download_bg);
+    background-size: cover;
+    width: 100%;
+    #download {
+        @include page();
+        p{
+        color:$white;
+        }
+        h1{
+            font-size: 50px;
+            font-weight: 700;
+            color: $white;
+           }
+        h4{
+            font-size: 22px;
+            font-weight: 500;
+            color: $black;
+           }
+         h5{
+            font-size: 12px;
+            color: $txt;
+           }
+        .col1{
+            width:750px;
+            .btn{
+                display: flex;
+                background-color: $white;
+                color:$black;
+                border-radius: 8px;
+                width: 250px;
+                height:80px;
+                padding-top:20px;
+                }
+        }
+        .col2{
+            width:415px;
+            .cropped1  {
+                z-index:1;
+                @include cropped(75%,500px,50px,100px);
+               } 
+            .cropped2  {
+                @include cropped(75%,450px,-450px,210px);
+                } 
+            .cropped3  {
+               @include cropped(70%,450px,-450px,-10px);
+               } 
+        }
+    }
+}
+ 
+
+
+
+#contactus {
+@include page();
+text-align: center;
+    .header{
+    display: inline-block;
+    width:550px;
+    }
+    .sendbtn{
+    background-color: $blue;
+    color:$white;
+    border-radius: 8px;
+    width: 220px;
+    height:60px;
+    padding:5px;
+    margin: 20px;
+    }
+}
+
+.footerbg {
+    height:300px;
+    background: url($footer_bg);
+    background-size: cover;
+    min-width: 100%;
+    text-align: center;
+    #footercontainer{
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:40px;
+    width:500px;
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                li {
+                    float: left;
+                  }
+                  
+                  li a {
+                    display: block;
+                    color: $white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    font-family: $roboto;
+                    font-size: 18px;
+                  }
+            }
+        }
+}

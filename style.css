@@ -1,0 +1,476 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+
+
+body{
+  background: #FFFAFA;;
+  margin:0;
+}
+
+ #topbg  {
+    background: url(images/Group\ 4634.svg) , url(images/Rectangle\ 1914.svg);
+    background-repeat: no-repeat;
+    background-position:-250px -1029px;
+    background-size: auto;
+    }
+    
+    
+    .navbar {
+      margin:auto;
+      width: 1160px;
+      }   
+  
+      .navbar-light .navbar-nav .nav-link {
+      content: "";
+      color: #ffffff;
+      font-weight: 500;
+      }
+      .navbar-light .navbar-nav  .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus,.navbar-light .navbar-nav .nav-link.active {
+      color: #ffbb00;
+      }
+      .navbar-light .navbar-nav .nav-link:hover::after, .navbar-dark .navbar-nav .nav-link:focus::after {
+        content: "";
+        border-bottom: 3px solid #ffbb00;
+        display: block;
+        width: 60%;
+      }
+    
+    
+    
+ .btn{
+    color: #ffffff;
+    background-color: #ffbb00;
+    font-family: 'Roboto', sans-serif;  
+    font-weight: 500;
+    border-radius: 12px;
+    padding: 13px 22px;
+    min-width: 150px;
+    min-height: 40px;
+   }
+   
+   
+    #showcase{
+      width:1165px;
+      margin: auto;;
+      color: #ffffff;
+      font-family: 'Poppins', sans-serif;
+    }
+    #showcase h1 {
+    font-weight: 700;
+    font-size: 50px;
+    margin: 45px 0 0 0;
+    }
+    #showcase p{
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif; 
+    }
+
+  .outlinebtn{
+    background-color: transparent;
+    color:#fff;
+    border-radius: 8px;
+    width: 200px;
+    height:80px;
+    padding-top:20px;
+    border: 1px solid white;
+  }
+  #showcase .mobs{
+    position: relative;
+    text-align: right;
+   }
+  
+  #showcase .mob1 {
+    position: relative;
+    top: 60px;
+    left:-200px;
+  }
+  #showcase .mob2 {
+    position: absolute;
+    top: -40px;
+    left: 265px;
+    }
+ 
+ 
+
+ 
+    /*About us*/ 
+ @keyframes spin { 100% { transform: rotate(360deg); }}
+    #about-us {
+    font-family: 'Roboto', sans-serif; 
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    width:1165px;
+   }
+    /*reuseable about us features*/
+    .heading{
+      border-radius: 15px;
+      background-color:rgba(255, 187, 0,0.4) ;
+      padding: 15px;
+      display: inline-block;
+      font-weight: bold;
+      color:rgb(255, 187, 0)
+    }
+    #about-us h1{
+      font-size: 40px;
+    }
+    #about-us h2{
+      font-size: 22px;
+      font-weight: 500;
+    }
+    
+    #about-us p{
+      font-size: 16px;
+      color:#8A8A8A;
+    }
+    #about-us .pmini{
+      font-size: 12px;
+      color:#6B6B6B;
+    }
+    
+    #about-us .bg2{
+    margin-top: -600px;
+    margin-left: 150px;
+    z-index: 1;
+    animation: spin 6s linear infinite;
+  }
+  
+   
+
+#features {
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  width:1165px;
+  font-family: 'Roboto', sans-serif; 
+}
+/*konstig syns ju knappt*/
+#features .marginpic{
+  background-color:#F6F6F6;
+  position:absolute;
+  z-index:-1;
+   margin-left: -260px;
+  margin-top: 20px;
+  }
+#features h1{
+  font-size: 40px;
+}
+#features h2{
+  font-size: 20px;
+}
+#features p{
+  font-size: 16px;
+  color:#8A8A8A;
+}
+#features .pmini{
+  font-size: 14px;
+  color:#8A8A8A;
+}
+#features .small_img{
+  top:0;
+  height:45px;
+  width:45px;
+  }
+.layer3{
+  position: relative;
+  display: inline-block;
+  right: -100px;
+  animation: spin 6s linear infinite;
+}
+.layer2{
+    position: relative;
+    background: transparent;
+    margin-top: -500px;
+    left: 0px;
+  }
+.layer1{
+    position: relative;
+    background: transparent;
+    margin-top: -550px;
+    left: 250px;
+  }
+  
+  #screens {
+    margin-top: 10rem;
+    width:1165px;
+    margin-left:auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif; 
+    text-align: center;
+   }
+    
+   #screens h1{
+    font-size: 40px;
+    text-align: center;
+    }
+    #screens h2{
+      font-size: 40px;
+      font-family: 'URW DIN Arabic', sans-serif; 
+      font-weight: bold;
+      color:#3096FE;
+    }
+  #screens p{
+    text-align: center;
+    font-size: 16px;
+    color: #8A8A8A;
+  }
+  #screens .img{
+    width:90%;
+  }
+  #screens .img_c{
+    width:100%;
+  }
+  
+  .header{
+    display: inline-block;
+    width:550px;
+  }
+  #info{
+    display: inline-block;
+    width:80%;
+  }
+  .bluebg{
+    height:550px;
+    background: url(images/bluebg.svg);
+    background-size: cover;
+    width: 100%;
+  }
+  /*download*/
+  #download {
+    margin-top: 10rem;
+    margin-left:auto;
+    margin-right: auto;
+    width:1165px;
+    height:550px;
+    font-family: 'Roboto', sans-serif; 
+    text-align: center;
+   }
+   #download h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffffff;
+   }
+   #download h4{
+    font-size: 22px;
+    font-weight: 500;
+    color: #111111;
+   }
+   #download h5{
+    font-size: 12px;
+   
+    color: #6B6B6B;
+   }
+   #download p{
+    font-size: 16px;
+    font-weight:normal;
+    color: #ffffff;
+   }
+   #download .col1{
+     width:750px;
+   }
+   #download .col2{
+    width:415px;
+  }
+  #download .btn{
+    display: flex;
+    background-color: #fff;
+    color:#111111;
+    border-radius: 8px;
+    width: 250px;
+    height:80px;
+    padding-top:20px;
+    }
+   /*download rightcolumn*/
+  .cropped1  {
+    width: 75%;
+    height:500px;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 100px;
+    z-index:1;
+    background: transparent;
+    overflow: hidden;
+   } 
+   .cropped2  {
+    width: 75%;
+    height:450px;
+    background: transparent;
+    position: relative;
+    margin-top:-450px;
+    margin-left: 210px;
+    overflow: hidden;
+    } 
+   .cropped3  {
+    width: 70%;
+    height:450px;
+    background: transparent;
+    position: relative;
+    margin-top:-450px;
+    margin-left: -10px;
+    overflow: hidden;
+    } 
+  
+  
+  
+   #contactus {
+    margin: 10rem;
+    width:1165px;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+    }
+ 
+  #contactus h1 {
+    font-size:40px;
+  }
+  #contactus .sendbtn{
+    
+      background-color: #3096FE;
+      color:#fff;
+      border-radius: 8px;
+      width: 220px;
+      height:60px;
+      padding:5px;
+      margin: 20px;
+      }
+      #contactus .sendbtn:hover{
+        border-radius: 0px;
+      }
+     
+  .footerbg {
+    height:300px;
+    background: url(images/footerbg.svg);
+    background-size: cover;
+    min-width: 100%;
+    text-align: center;
+   }
+ 
+   #footercontainer{
+   
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:40px;
+    width:500px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 18px;
+  }
+  
+  
+ 
+    
+  @media screen and (max-width: 600px) {
+     
+  .navbar {
+  background-color: transparent;
+  width: 80%;
+  text-align: center;
+  }
+  .navbar-brand{
+  margin-left:100px;
+  }
+  #topbg  {
+  background-image:none;
+  background-color: #3096FE;
+  height:820px;
+  width: 1200px;
+  }
+  /***avdelningar****/   
+  #showcase{
+  margin-top: 50px;
+  margin-right: 0;
+  margin-left: 200px;
+  width: 640px;
+  }
+  #about-us, #features,#screens{ 
+  margin-top: 280px;
+  text-align: center;
+  width: 80%;
+  }
+  #contactus{
+  width: 60%;
+  }
+  #download{
+   margin-top: 280px;
+   margin-left: 20%;
+  }
+
+  
+  #showcase .mob1  {
+  display: none;
+  }
+  #showcase .mob2 {
+  margin-left: -100px;
+  margin-top:20px;
+  }
+  
+  
+  #about-us .first{
+  grid-area: first;
+  margin-top: 100px;
+  }
+  #about-us  .second{
+  grid-area: second;
+  }
+  #about-us .bg2{
+  margin-right: 160px;
+  }
+  #about-us .row {
+  text-align: center;
+  display: grid;
+  grid-template-areas:    "second"
+                            "first";
+  }
+
+
+  #features .first{
+  grid-area: first;
+  margin-top: -100px;
+  }
+  #features  .second{
+  grid-area: second;
+  margin-top: 80px;
+  padding-right: 100px;
+  }
+  #features .layer1{
+  margin-right: 250px;
+  }
+  #features .row {
+  text-align: center;
+  display: grid;
+  grid-template-areas:    "first"
+                            "second";
+  }
+  /*features*/
+  .cropped1,.cropped2,.cropped3 {
+     display:none;
+   }
+  
+}
+    
+    
+          
+           
+             
+   
